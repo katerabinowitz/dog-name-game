@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Anchorage Dog Name Game</title>
+    </head>
+    <body>
+        <h1>Dog Name Game</h1>
+
+        <input type="checkbox" onclick="playARound()" /> Hard mode
+
+        <h2 id="round"></h2>
+
+        <div id="play">
+            <h2>Which name is more popular for Anchorage dogs?</h2>
+            <a href="#" onclick="nameChosen(this.text)"></a>
+            <a href="#" onclick="nameChosen(this.text)"></a>
+        </div>
+
+        <div id="results">
+            <h2></h2>
+            <div></div>
+            <div></div>
+
+            <button onclick="nextButton()">Next</button>
+        </div>
+
+        <script src="dogs.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
