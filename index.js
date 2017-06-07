@@ -1,5 +1,5 @@
 // const dogs = require('./dogs.json')
-var NUMBER_OF_ROUNDS = 2
+var NUMBER_OF_ROUNDS = 10
 var is_hard_mode = false
 var rounds_played = 0
 var correct_rounds = 0
