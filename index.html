@@ -1,18 +1,46 @@
 <html>
     <head>
         <title>Anchorage Dog Name Game</title>
+        <style>
+            .choose_mode #play,
+            .choose_mode #round,
+            .choose_mode #results,
+            .choose_mode #final_results { display: none }
+            .choose_mode #choose_mode { display: block }
+
+            .play #play,
+            .play #round { display: block }
+            .play #results,
+            .play #final_results,
+            .play #choose_mode { display: none }
+
+            .results #play,
+            .results #round,
+            .results #choose_mode,
+            .results #final_results { display: none }
+            .results #results{ display: block }
+
+            .final_results #play,
+            .final_results #round,
+            .final_results #choose_mode,
+            .final_results #results { display: none }
+            .final_results #final_results{ display: block }
+        </style>
     </head>
-    <body>
+    <body class="choose_mode">
         <h1>Dog Name Game</h1>
 
-        <input type="checkbox" onclick="playARound()" /> Hard mode
+        <div id="choose_mode">
+            <button onclick="chooseMode(false)">Easy mode</button>
+            <button onclick="chooseMode(true)">Hard mode</button>
+        </div>
 
         <h2 id="round"></h2>
 
         <div id="play">
             <h2>Which name is more popular for Anchorage dogs?</h2>
-            <a href="#" onclick="nameChosen(this.text)"></a>
-            <a href="#" onclick="nameChosen(this.text)"></a>
+            <button onclick="nameChosen(this.innerText)"></button>
+            <button onclick="nameChosen(this.innerText)"></button>
         </div>
 
         <div id="results">
@@ -21,6 +49,14 @@
             <div></div>
 
             <button onclick="nextButton()">Next</button>
+        </div>
+
+        <div id="final_results">
+            <div></div>
+            <p>Tweet this</p>
+            <p>Post to facebook</p>
+
+            <button onclick="initialize()">Play Again</button>
         </div>
 
         <script src="dogs.js"></script>

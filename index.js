@@ -1,5 +1,6 @@
 // const dogs = require('./dogs.json')
-var NUMBER_OF_ROUNDS = 10
+var NUMBER_OF_ROUNDS = 2
+var is_hard_mode = false
 var rounds_played = 0
 var correct_rounds = 0
 var current_dog_pair = null
@@ -37,9 +38,19 @@ function getTwoDogs(minimum_count_diff, maximum_count_diff) {
 }
 
 
+// Set mode and begin the game
+function chooseMode(_is_hard_mode) {
+    is_hard_mode = _is_hard_mode
+
+    playARound()
+}
+
+
 // Gets new dog choices and displays them
 function playARound() {
-    if (document.querySelector('input').checked) {
+    document.body.className = 'play'
+
+    if (is_hard_mode) {
         current_dog_pair = getTwoDogs(null, 1) // hard mode
     }
     else {
@@ -48,18 +59,14 @@ function playARound() {
 
     document.querySelector('#round').innerText = rounds_played + 1 + ' / ' + NUMBER_OF_ROUNDS
 
-    document.querySelector('#play').style.display = 'block'
-    document.querySelector('#results').style.display = 'none'
-
-    document.querySelectorAll('a')[0].text = current_dog_pair[0].name
-    document.querySelectorAll('a')[1].text = current_dog_pair[1].name
+    document.querySelectorAll('#play button')[0].innerText = current_dog_pair[0].name
+    document.querySelectorAll('#play button')[1].innerText = current_dog_pair[1].name
 }
 
 
 // Displays results of a choice
 function displayResults(is_correct) {
-    document.querySelector('#play').style.display = 'none'
-    document.querySelector('#results').style.display = 'block'
+    document.body.className = 'results'
 
     document.querySelector('#results h2').innerText = is_correct ? 'Correct' : 'Wrong'
 
@@ -71,13 +78,17 @@ function displayResults(is_correct) {
 
 // Displays final results
 function displayFinalResults() {
-    alert('You got ' + correct_rounds + ' out of ' + NUMBER_OF_ROUNDS + ' correct')
+    document.body.className = 'final_results'
+
+    document.querySelector('#final_results div').innerText = 'You got ' + correct_rounds + ' out of ' + NUMBER_OF_ROUNDS + ' correct'
+
+    // initialize()
 }
 
 
 // Onclick handler for choosing a dog
 function nameChosen(name) {
-    var popular_dog = current_dog_pair.sort((a, b) => b.count - a.count)[0]
+    var popular_dog = current_dog_pair.sort((a, b) => (a.count - b.count))[1]
     var is_correct = name === popular_dog.name
 
     displayResults(is_correct)
@@ -99,5 +110,15 @@ function nextButton() {
     }
 }
 
+
 // initialize the game
-playARound()
+function initialize() {
+    rounds_played = 0
+    correct_rounds = 0
+    current_dog_pair = null
+
+    document.body.className = 'choose_mode'
+}
+
+
+initialize()
