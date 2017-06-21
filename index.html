@@ -1,6 +1,10 @@
 <html>
     <head>
         <title>Anchorage Dog Name Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Life+Savers:400,700|Love+Ya+Like+A+Sister" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
         <style>
             .choose_mode #play,
             .choose_mode #round,
@@ -15,9 +19,9 @@
             .play #choose_mode { display: none }
 
             .results #play,
-            .results #round,
             .results #choose_mode,
             .results #final_results { display: none }
+            .results #round,
             .results #results{ display: block }
 
             .final_results #play,
@@ -28,38 +32,48 @@
         </style>
     </head>
     <body class="choose_mode">
-        <h1>Dog Name Game</h1>
+        <div id="main">
+            <div id="title-block">
+                <h3>Anchorage<br>Edition</h3>
+                <h1>Dog Name <span class="undertuck">Game</span></h1>
+            </div>
 
-        <div id="choose_mode">
-            <button onclick="chooseMode(false)">Easy mode</button>
-            <button onclick="chooseMode(true)">Hard mode</button>
+            <div id="choose_mode">
+                <button class="dog-with-chubby-cheeks" onclick="chooseMode(false)">Easy Mode</button>
+                <button class="angry-bulldog-face"onclick="chooseMode(true)">Hard Mode</button>     
+            </div>
+
+            <div id="round">
+                <h2 id="roundNumber"></h2>   
+            </div>
+
+            <div id="play">
+                <h2>Which name is more popular for Anchorage dogs?</h2>
+                <button onclick="nameChosen(this.innerText)"></button>
+                <button onclick="nameChosen(this.innerText)"></button>
+            </div>
+
+            <div id="results">
+                <div id="gameNav" onclick="nextButton()">
+                    <span id="result"></span><span id="next">Next &#187;</span>
+                </div>
+                <div id="counts">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="final_results">
+                <h2></h2>
+                <p>Tweet this</p>
+                <p>Post to facebook</p>
+
+                <button class="prize-badge-with-paw-print" onclick="initialize()">Play Again</button>
+            </div>
+
+            <script src="dogs.js"></script>
+            <script src="dogIconClasses.js"></script>
+            <script src="index.js"></script>
         </div>
-
-        <h2 id="round"></h2>
-
-        <div id="play">
-            <h2>Which name is more popular for Anchorage dogs?</h2>
-            <button onclick="nameChosen(this.innerText)"></button>
-            <button onclick="nameChosen(this.innerText)"></button>
-        </div>
-
-        <div id="results">
-            <h2></h2>
-            <div></div>
-            <div></div>
-
-            <button onclick="nextButton()">Next</button>
-        </div>
-
-        <div id="final_results">
-            <div></div>
-            <p>Tweet this</p>
-            <p>Post to facebook</p>
-
-            <button onclick="initialize()">Play Again</button>
-        </div>
-
-        <script src="dogs.js"></script>
-        <script src="index.js"></script>
     </body>
 </html>

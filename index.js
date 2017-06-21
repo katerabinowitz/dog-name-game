@@ -1,4 +1,5 @@
 // const dogs = require('./dogs.json')
+
 var NUMBER_OF_ROUNDS = 10
 var is_hard_mode = false
 var rounds_played = 0
@@ -33,15 +34,39 @@ function getTwoDogs(minimum_count_diff, maximum_count_diff) {
         return true
     })
     var dog2 = other_dogs[Math.floor(Math.random() * other_dogs.length - 1)]
-
-    return [ dog1, dog2 ]
+  
+    /* Dog1 is almost guarateened to be the lowest score because 
+       the distribution strongly favors picking a very low-numbered name 
+       so let's randomize the order a bit
+    */
+    dog1.name = dog1.name.toLowerCase() // lower case makes it easier to manipulate on front end.
+    dog2.name = dog2.name.toLowerCase()
+    return Math.random() <= 0.5 ? [ dog1, dog2 ] : [ dog2, dog1 ]
 }
 
+function getTwoIcons() {
+    // list in './dogIconClasses.js'
+    var num_of_icons = dogIconsClasses.length;
+    // Pick a random index
+    var idx1 = Math.floor(Math.random() * num_of_icons);
+    // Calculate second index by offset so we get unique icons
+    var idx2 = (idx1 + 1 + Math.floor(Math.random() * (num_of_icons - 1))) % num_of_icons
+    return [dogIconsClasses[idx1], dogIconsClasses[idx2]]
+}
 
 // Set mode and begin the game
 function chooseMode(_is_hard_mode) {
     is_hard_mode = _is_hard_mode
+ 
+    var count_div = document.querySelector('#round');
 
+    (function addBone(n){
+        var s = document.createElement('span');
+        s.className = "bone"
+        count_div.appendChild(s)
+        if(n<NUMBER_OF_ROUNDS) setTimeout(()=> { addBone(++n); }, 50)
+    })(1)
+    
     playARound()
 }
 
@@ -57,10 +82,16 @@ function playARound() {
         current_dog_pair = getTwoDogs(10, null) // easy mode
     }
 
-    document.querySelector('#round').innerText = rounds_played + 1 + ' / ' + NUMBER_OF_ROUNDS
+    iconClasses = getTwoIcons();
+
+    document.querySelector('#roundNumber').innerText = rounds_played + 1 + ' / ' + NUMBER_OF_ROUNDS
 
     document.querySelectorAll('#play button')[0].innerText = current_dog_pair[0].name
+    document.querySelectorAll('#play button')[0].className = iconClasses[0];
+    
     document.querySelectorAll('#play button')[1].innerText = current_dog_pair[1].name
+    document.querySelectorAll('#play button')[1].className = iconClasses[1];
+
 }
 
 
@@ -68,11 +99,16 @@ function playARound() {
 function displayResults(is_correct) {
     document.body.className = 'results'
 
-    document.querySelector('#results h2').innerText = is_correct ? 'Correct' : 'Wrong'
+    document.querySelector('#gameNav #result').innerText = (is_correct ? 'Correct' : 'Wrong')
+    document.querySelector('#gameNav #result').className = is_correct ? 'correct' : 'wrong' 
 
-    var result_divs = document.querySelectorAll('#results div')
-    result_divs[0].innerText = current_dog_pair[0].name + ': ' + current_dog_pair[0].count + ' dogs'
-    result_divs[1].innerText = current_dog_pair[1].name + ': ' + current_dog_pair[1].count + ' dogs'
+    var count_div = document.querySelectorAll('#round span')[rounds_played].className += is_correct ? " correct" : " wrong"
+    var result_divs = document.querySelectorAll('#counts div')
+    result_divs[0].innerHTML = current_dog_pair[0].name + '<br>' + current_dog_pair[0].count + ' dogs'
+    result_divs[0].className = iconClasses[0] + (current_dog_pair[0].count > current_dog_pair[1].count ? " correct" : " wrong")
+
+    result_divs[1].innerHTML = current_dog_pair[1].name + '<br>' + current_dog_pair[1].count + ' dogs'
+    result_divs[1].className = iconClasses[1] + (current_dog_pair[1].count > current_dog_pair[0].count ? " correct" : " wrong")
 }
 
 
@@ -80,7 +116,7 @@ function displayResults(is_correct) {
 function displayFinalResults() {
     document.body.className = 'final_results'
 
-    document.querySelector('#final_results div').innerText = 'You got ' + correct_rounds + ' out of ' + NUMBER_OF_ROUNDS + ' correct'
+    document.querySelector('#final_results h2').innerText = 'You got ' + correct_rounds + ' out of ' + NUMBER_OF_ROUNDS + ' correct'
 
     // initialize()
 }
@@ -88,8 +124,8 @@ function displayFinalResults() {
 
 // Onclick handler for choosing a dog
 function nameChosen(name) {
-    var popular_dog = current_dog_pair.sort((a, b) => (a.count - b.count))[1]
-    var is_correct = name === popular_dog.name
+    var popular_dog = current_dog_pair.slice().sort((a, b) => (a.count - b.count))[1] // prevent sorting original array
+    var is_correct = name.toLowerCase() === popular_dog.name
 
     displayResults(is_correct)
 
@@ -116,7 +152,10 @@ function initialize() {
     rounds_played = 0
     correct_rounds = 0
     current_dog_pair = null
-
+    var bones = document.querySelectorAll('#round span')
+    Array.prototype.forEach.call( bones, function( node ) {
+        node.parentNode.removeChild( node );
+    });
     document.body.className = 'choose_mode'
 }
 
