@@ -11,7 +11,7 @@ var current_dog_pair = null
 // You can tune the difficulty by passing in the maximim and minimum difference
 // in popularity count. Both are nullable.
 function getTwoDogs(minimum_count_diff, maximum_count_diff) {
-    var dog1 = dogs[Math.floor(Math.random() * dogs.length - 1)]
+    var dog1 = dogs[Math.floor(Math.random() * dogs.length)]
 
     var other_dogs = dogs.filter((dog) => {
         // check for minimum difference
@@ -33,23 +33,20 @@ function getTwoDogs(minimum_count_diff, maximum_count_diff) {
 
         return true
     })
-    var dog2 = other_dogs[Math.floor(Math.random() * other_dogs.length - 1)]
+    var dog2 = other_dogs[Math.floor(Math.random() * other_dogs.length)]
   
     /* Dog1 is almost guarateened to be the lowest score because 
        the distribution strongly favors picking a very low-numbered name 
        so let's randomize the order a bit
     */
-    dog1.name = dog1.name.toLowerCase() // lower case makes it easier to manipulate on front end.
-    dog2.name = dog2.name.toLowerCase()
-    return Math.random() <= 0.5 ? [ dog1, dog2 ] : [ dog2, dog1 ]
+    return Math.random() < 0.5 ? [ dog1, dog2 ] : [ dog2, dog1 ]
 }
 
 function getTwoIcons() {
     // list in './dogIconClasses.js'
     var num_of_icons = dogIconsClasses.length;
-    // Pick a random index
     var idx1 = Math.floor(Math.random() * num_of_icons);
-    // Calculate second index by offset so we get unique icons
+    // Calculate second index with offset so we get unique icons
     var idx2 = (idx1 + 1 + Math.floor(Math.random() * (num_of_icons - 1))) % num_of_icons
     return [dogIconsClasses[idx1], dogIconsClasses[idx2]]
 }
@@ -118,6 +115,9 @@ function displayFinalResults() {
 
     document.querySelector('#final_results h2').innerText = 'You got ' + correct_rounds + ' out of ' + NUMBER_OF_ROUNDS + ' correct'
 
+    var social_text = "I just scored " + correct_rounds + " out of " + NUMBER_OF_ROUNDS + " on the Anchorage Dog Name Game! Try it here: http://codeforanchorage.org/dog-name-game/"
+    document.querySelector('#twitter-link').href = "https://twitter.com/home?status=" + encodeURIComponent(social_text)
+    
     // initialize()
 }
 
