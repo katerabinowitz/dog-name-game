@@ -13,7 +13,7 @@ var current_dog_pair = null
 function getTwoDogs(minimum_count_diff, maximum_count_diff) {
     var dog1 = dogs[Math.floor(Math.random() * dogs.length)]
 
-    var other_dogs = dogs.filter((dog) => {
+    var other_dogs = dogs.filter(function(dog) {
         // check for minimum difference
         if (!isNaN(parseInt(minimum_count_diff))) {
             if (Math.abs(dog.count - dog1.count) < parseInt(minimum_count_diff)) {
@@ -61,7 +61,9 @@ function chooseMode(_is_hard_mode) {
         var s = document.createElement('span');
         s.className = "bone"
         count_div.appendChild(s)
-        if(n<NUMBER_OF_ROUNDS) setTimeout(()=> { addBone(++n); }, 50)
+        if(n<NUMBER_OF_ROUNDS) setTimeout(function() {
+            addBone(++n); 
+        }, 50)
     })(1)
     
     playARound()
@@ -124,7 +126,9 @@ function displayFinalResults() {
 
 // Onclick handler for choosing a dog
 function nameChosen(name) {
-    var popular_dog = current_dog_pair.slice().sort((a, b) => (a.count - b.count))[1] // prevent sorting original array
+    var popular_dog = current_dog_pair.slice().sort(function(a, b) {
+        a.count - b.count
+    })[1] // prevent sorting original array
     var is_correct = name.toLowerCase() === popular_dog.name
 
     displayResults(is_correct)
