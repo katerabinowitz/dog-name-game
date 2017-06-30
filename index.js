@@ -34,9 +34,9 @@ function getTwoDogs(minimum_count_diff, maximum_count_diff) {
         return true
     })
     var dog2 = other_dogs[Math.floor(Math.random() * other_dogs.length)]
-  
-    /* Dog1 is almost guarateened to be the lowest score because 
-       the distribution strongly favors picking a very low-numbered name 
+
+    /* Dog1 is almost guarateened to be the lowest score because
+       the distribution strongly favors picking a very low-numbered name
        so let's randomize the order a bit
     */
     return Math.random() < 0.5 ? [ dog1, dog2 ] : [ dog2, dog1 ]
@@ -54,7 +54,7 @@ function getTwoIcons() {
 // Set mode and begin the game
 function chooseMode(_is_hard_mode) {
     is_hard_mode = _is_hard_mode
- 
+
     var count_div = document.querySelector('#round');
 
     (function addBone(n){
@@ -62,10 +62,10 @@ function chooseMode(_is_hard_mode) {
         s.className = "bone"
         count_div.appendChild(s)
         if(n<NUMBER_OF_ROUNDS) setTimeout(function() {
-            addBone(++n); 
+            addBone(++n);
         }, 50)
     })(1)
-    
+
     playARound()
 }
 
@@ -87,7 +87,7 @@ function playARound() {
 
     document.querySelectorAll('#play button')[0].innerText = current_dog_pair[0].name
     document.querySelectorAll('#play button')[0].className = iconClasses[0];
-    
+
     document.querySelectorAll('#play button')[1].innerText = current_dog_pair[1].name
     document.querySelectorAll('#play button')[1].className = iconClasses[1];
 
@@ -99,7 +99,7 @@ function displayResults(is_correct) {
     document.body.className = 'results'
 
     document.querySelector('#gameNav #result').innerText = (is_correct ? 'Correct' : 'Wrong')
-    document.querySelector('#gameNav #result').className = is_correct ? 'correct' : 'wrong' 
+    document.querySelector('#gameNav #result').className = is_correct ? 'correct' : 'wrong'
 
     var count_div = document.querySelectorAll('#round span')[rounds_played].className += is_correct ? " correct" : " wrong"
     var result_divs = document.querySelectorAll('#counts div')
@@ -119,7 +119,7 @@ function displayFinalResults() {
 
     var social_text = "I just scored " + correct_rounds + " out of " + NUMBER_OF_ROUNDS + " on the Anchorage Dog Name Game! Try it here: http://codeforanchorage.org/dog-name-game/"
     document.querySelector('#twitter-link').href = "https://twitter.com/home?status=" + encodeURIComponent(social_text)
-    
+
     // initialize()
 }
 
@@ -127,7 +127,7 @@ function displayFinalResults() {
 // Onclick handler for choosing a dog
 function nameChosen(name) {
     var popular_dog = current_dog_pair.slice().sort(function(a, b) {
-        a.count - b.count
+        return a.count - b.count
     })[1] // prevent sorting original array
     var is_correct = name.toLowerCase() === popular_dog.name
 
