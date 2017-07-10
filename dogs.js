@@ -1,19 +1,23 @@
 var dogs = [
   {
     "name": "max",
-    "count": 75
+    "count": 79
   },
   {
     "name": "bella",
-    "count": 59
+    "count": 60
   },
   {
     "name": "lucy",
-    "count": 58
+    "count": 59
   },
   {
     "name": "lola",
     "count": 49
+  },
+  {
+    "name": "rocky",
+    "count": 45
   },
   {
     "name": "bailey",
@@ -24,8 +28,8 @@ var dogs = [
     "count": 44
   },
   {
-    "name": "rocky",
-    "count": 44
+    "name": "coco",
+    "count": 42
   },
   {
     "name": "daisy",
@@ -56,7 +60,11 @@ var dogs = [
     "count": 33
   },
   {
-    "name": "coco",
+    "name": "chloe",
+    "count": 33
+  },
+  {
+    "name": "king",
     "count": 33
   },
   {
@@ -64,15 +72,7 @@ var dogs = [
     "count": 33
   },
   {
-    "name": "chloe",
-    "count": 32
-  },
-  {
     "name": "cooper",
-    "count": 32
-  },
-  {
-    "name": "king",
     "count": 32
   },
   {
@@ -120,6 +120,10 @@ var dogs = [
     "count": 25
   },
   {
+    "name": "zoe",
+    "count": 25
+  },
+  {
     "name": "oliver",
     "count": 24
   },
@@ -132,10 +136,6 @@ var dogs = [
     "count": 24
   },
   {
-    "name": "zoe",
-    "count": 24
-  },
-  {
     "name": "buster",
     "count": 23
   },
@@ -144,15 +144,15 @@ var dogs = [
     "count": 23
   },
   {
+    "name": "roxy",
+    "count": 23
+  },
+  {
     "name": "sophie",
     "count": 23
   },
   {
     "name": "roscoe",
-    "count": 22
-  },
-  {
-    "name": "roxy",
     "count": 22
   },
   {
@@ -204,6 +204,14 @@ var dogs = [
     "count": 18
   },
   {
+    "name": "lilly",
+    "count": 18
+  },
+  {
+    "name": "smokey",
+    "count": 18
+  },
+  {
     "name": "winston",
     "count": 18
   },
@@ -224,7 +232,7 @@ var dogs = [
     "count": 17
   },
   {
-    "name": "lilly",
+    "name": "hugo",
     "count": 17
   },
   {
@@ -232,19 +240,15 @@ var dogs = [
     "count": 17
   },
   {
-    "name": "smokey",
-    "count": 17
-  },
-  {
     "name": "tucker",
     "count": 17
   },
   {
-    "name": "bruno",
+    "name": "brownie",
     "count": 16
   },
   {
-    "name": "hugo",
+    "name": "bruno",
     "count": 16
   },
   {
@@ -272,10 +276,6 @@ var dogs = [
     "count": 16
   },
   {
-    "name": "brownie",
-    "count": 15
-  },
-  {
     "name": "diesel",
     "count": 15
   },
@@ -293,6 +293,10 @@ var dogs = [
   },
   {
     "name": "olive",
+    "count": 15
+  },
+  {
+    "name": "precious",
     "count": 15
   },
   {
@@ -320,7 +324,7 @@ var dogs = [
     "count": 14
   },
   {
-    "name": "precious",
+    "name": "rudy",
     "count": 14
   },
   {
@@ -328,7 +332,15 @@ var dogs = [
     "count": 14
   },
   {
+    "name": "tyson",
+    "count": 14
+  },
+  {
     "name": "bo",
+    "count": 13
+  },
+  {
+    "name": "chico",
     "count": 13
   },
   {
@@ -352,7 +364,7 @@ var dogs = [
     "count": 13
   },
   {
-    "name": "rudy",
+    "name": "simba",
     "count": 13
   },
   {
@@ -360,15 +372,7 @@ var dogs = [
     "count": 13
   },
   {
-    "name": "tyson",
-    "count": 13
-  },
-  {
     "name": "cassie",
-    "count": 12
-  },
-  {
-    "name": "chico",
     "count": 12
   },
   {
@@ -408,11 +412,15 @@ var dogs = [
     "count": 12
   },
   {
-    "name": "simba",
-    "count": 12
+    "name": "angel",
+    "count": 11
   },
   {
-    "name": "angel",
+    "name": "annie",
+    "count": 11
+  },
+  {
+    "name": "barney",
     "count": 11
   },
   {
@@ -484,14 +492,6 @@ var dogs = [
     "count": 11
   },
   {
-    "name": "annie",
-    "count": 10
-  },
-  {
-    "name": "barney",
-    "count": 10
-  },
-  {
     "name": "chase",
     "count": 10
   },
@@ -516,6 +516,10 @@ var dogs = [
     "count": 10
   },
   {
+    "name": "mimi",
+    "count": 10
+  },
+  {
     "name": "nino",
     "count": 10
   },
@@ -536,7 +540,15 @@ var dogs = [
     "count": 10
   },
   {
+    "name": "sunny",
+    "count": 10
+  },
+  {
     "name": "tank",
+    "count": 10
+  },
+  {
+    "name": "taz",
     "count": 10
   },
   {
@@ -548,15 +560,15 @@ var dogs = [
     "count": 9
   },
   {
-    "name": "coco",
-    "count": 9
-  },
-  {
     "name": "finn",
     "count": 9
   },
   {
     "name": "gizmo",
+    "count": 9
+  },
+  {
+    "name": "hunter",
     "count": 9
   },
   {
@@ -596,11 +608,7 @@ var dogs = [
     "count": 9
   },
   {
-    "name": "sunny",
-    "count": 9
-  },
-  {
-    "name": "taz",
+    "name": "sweetie",
     "count": 9
   },
   {
@@ -628,6 +636,14 @@ var dogs = [
     "count": 8
   },
   {
+    "name": "casey",
+    "count": 8
+  },
+  {
+    "name": "chance",
+    "count": 8
+  },
+  {
     "name": "delilah",
     "count": 8
   },
@@ -649,10 +665,6 @@ var dogs = [
   },
   {
     "name": "hazel",
-    "count": 8
-  },
-  {
-    "name": "hunter",
     "count": 8
   },
   {
@@ -692,10 +704,6 @@ var dogs = [
     "count": 8
   },
   {
-    "name": "mimi",
-    "count": 8
-  },
-  {
     "name": "misty",
     "count": 8
   },
@@ -724,15 +732,15 @@ var dogs = [
     "count": 8
   },
   {
+    "name": "simon",
+    "count": 8
+  },
+  {
     "name": "snoopy",
     "count": 8
   },
   {
     "name": "star",
-    "count": 8
-  },
-  {
-    "name": "sweetie",
     "count": 8
   },
   {
@@ -756,6 +764,10 @@ var dogs = [
     "count": 8
   },
   {
+    "name": "abigail",
+    "count": 7
+  },
+  {
     "name": "ace",
     "count": 7
   },
@@ -768,19 +780,15 @@ var dogs = [
     "count": 7
   },
   {
-    "name": "casey",
-    "count": 7
-  },
-  {
     "name": "cash",
     "count": 7
   },
   {
-    "name": "chance",
+    "name": "chewy",
     "count": 7
   },
   {
-    "name": "chewy",
+    "name": "chip",
     "count": 7
   },
   {
@@ -860,6 +868,10 @@ var dogs = [
     "count": 7
   },
   {
+    "name": "queen",
+    "count": 7
+  },
+  {
     "name": "radar",
     "count": 7
   },
@@ -884,10 +896,6 @@ var dogs = [
     "count": 7
   },
   {
-    "name": "simon",
-    "count": 7
-  },
-  {
     "name": "sparky",
     "count": 7
   },
@@ -904,16 +912,16 @@ var dogs = [
     "count": 7
   },
   {
+    "name": "tigger",
+    "count": 7
+  },
+  {
     "name": "winnie",
     "count": 7
   },
   {
     "name": "yogi",
     "count": 7
-  },
-  {
-    "name": "abigail",
-    "count": 6
   },
   {
     "name": "arthur",
@@ -925,6 +933,10 @@ var dogs = [
   },
   {
     "name": "barley",
+    "count": 6
+  },
+  {
+    "name": "barry",
     "count": 6
   },
   {
@@ -960,10 +972,6 @@ var dogs = [
     "count": 6
   },
   {
-    "name": "chip",
-    "count": 6
-  },
-  {
     "name": "clementine",
     "count": 6
   },
@@ -977,6 +985,10 @@ var dogs = [
   },
   {
     "name": "colby",
+    "count": 6
+  },
+  {
+    "name": "dino",
     "count": 6
   },
   {
@@ -1104,7 +1116,7 @@ var dogs = [
     "count": 6
   },
   {
-    "name": "queen",
+    "name": "poppy",
     "count": 6
   },
   {
@@ -1148,10 +1160,6 @@ var dogs = [
     "count": 6
   },
   {
-    "name": "tigger",
-    "count": 6
-  },
-  {
     "name": "tito",
     "count": 6
   },
@@ -1160,11 +1168,19 @@ var dogs = [
     "count": 6
   },
   {
+    "name": "willie",
+    "count": 6
+  },
+  {
     "name": "addison",
     "count": 5
   },
   {
     "name": "ajax",
+    "count": 5
+  },
+  {
+    "name": "apple",
     "count": 5
   },
   {
@@ -1180,11 +1196,11 @@ var dogs = [
     "count": 5
   },
   {
-    "name": "barry",
+    "name": "beauty",
     "count": 5
   },
   {
-    "name": "beauty",
+    "name": "bebe",
     "count": 5
   },
   {
@@ -1209,6 +1225,10 @@ var dogs = [
   },
   {
     "name": "buttercup",
+    "count": 5
+  },
+  {
+    "name": "caesar",
     "count": 5
   },
   {
@@ -1241,10 +1261,6 @@ var dogs = [
   },
   {
     "name": "darwin",
-    "count": 5
-  },
-  {
-    "name": "dino",
     "count": 5
   },
   {
@@ -1297,6 +1313,10 @@ var dogs = [
   },
   {
     "name": "griffin",
+    "count": 5
+  },
+  {
+    "name": "grover",
     "count": 5
   },
   {
@@ -1404,15 +1424,15 @@ var dogs = [
     "count": 5
   },
   {
+    "name": "panda",
+    "count": 5
+  },
+  {
     "name": "patches",
     "count": 5
   },
   {
     "name": "pebbles",
-    "count": 5
-  },
-  {
-    "name": "poppy",
     "count": 5
   },
   {
@@ -1433,6 +1453,10 @@ var dogs = [
   },
   {
     "name": "rose",
+    "count": 5
+  },
+  {
+    "name": "rover",
     "count": 5
   },
   {
@@ -1492,15 +1516,15 @@ var dogs = [
     "count": 5
   },
   {
+    "name": "tutu",
+    "count": 5
+  },
+  {
     "name": "vegas",
     "count": 5
   },
   {
     "name": "violet",
-    "count": 5
-  },
-  {
-    "name": "willie",
     "count": 5
   },
   {
@@ -1544,10 +1568,6 @@ var dogs = [
     "count": 4
   },
   {
-    "name": "apple",
-    "count": 4
-  },
-  {
     "name": "astro",
     "count": 4
   },
@@ -1573,10 +1593,6 @@ var dogs = [
   },
   {
     "name": "beatrice",
-    "count": 4
-  },
-  {
-    "name": "bebe",
     "count": 4
   },
   {
@@ -1633,10 +1649,6 @@ var dogs = [
   },
   {
     "name": "bunny",
-    "count": 4
-  },
-  {
-    "name": "caesar",
     "count": 4
   },
   {
@@ -1744,10 +1756,6 @@ var dogs = [
     "count": 4
   },
   {
-    "name": "grover",
-    "count": 4
-  },
-  {
     "name": "hamilton",
     "count": 4
   },
@@ -1761,6 +1769,10 @@ var dogs = [
   },
   {
     "name": "jo jo",
+    "count": 4
+  },
+  {
+    "name": "jojo",
     "count": 4
   },
   {
@@ -1852,10 +1864,6 @@ var dogs = [
     "count": 4
   },
   {
-    "name": "panda",
-    "count": 4
-  },
-  {
     "name": "papi",
     "count": 4
   },
@@ -1905,10 +1913,6 @@ var dogs = [
   },
   {
     "name": "romeo",
-    "count": 4
-  },
-  {
-    "name": "rover",
     "count": 4
   },
   {
@@ -1992,10 +1996,6 @@ var dogs = [
     "count": 4
   },
   {
-    "name": "tutu",
-    "count": 4
-  },
-  {
     "name": "tuxedo",
     "count": 4
   },
@@ -2028,6 +2028,10 @@ var dogs = [
     "count": 3
   },
   {
+    "name": "amber",
+    "count": 3
+  },
+  {
     "name": "andrew",
     "count": 3
   },
@@ -2049,6 +2053,10 @@ var dogs = [
   },
   {
     "name": "arya",
+    "count": 3
+  },
+  {
+    "name": "asia",
     "count": 3
   },
   {
@@ -2192,6 +2200,10 @@ var dogs = [
     "count": 3
   },
   {
+    "name": "ceasar",
+    "count": 3
+  },
+  {
     "name": "che",
     "count": 3
   },
@@ -2209,6 +2221,10 @@ var dogs = [
   },
   {
     "name": "churchill",
+    "count": 3
+  },
+  {
+    "name": "cj",
     "count": 3
   },
   {
@@ -2257,6 +2273,10 @@ var dogs = [
   },
   {
     "name": "dodger",
+    "count": 3
+  },
+  {
+    "name": "dog",
     "count": 3
   },
   {
@@ -2436,6 +2456,10 @@ var dogs = [
     "count": 3
   },
   {
+    "name": "kiki",
+    "count": 3
+  },
+  {
     "name": "kiko",
     "count": 3
   },
@@ -2477,6 +2501,10 @@ var dogs = [
   },
   {
     "name": "lilo",
+    "count": 3
+  },
+  {
+    "name": "lilu",
     "count": 3
   },
   {
@@ -2604,6 +2632,10 @@ var dogs = [
     "count": 3
   },
   {
+    "name": "nemo",
+    "count": 3
+  },
+  {
     "name": "newton",
     "count": 3
   },
@@ -2633,6 +2665,10 @@ var dogs = [
   },
   {
     "name": "orion",
+    "count": 3
+  },
+  {
+    "name": "osito",
     "count": 3
   },
   {
@@ -2788,6 +2824,14 @@ var dogs = [
     "count": 3
   },
   {
+    "name": "shandy",
+    "count": 3
+  },
+  {
+    "name": "shane",
+    "count": 3
+  },
+  {
     "name": "silas",
     "count": 3
   },
@@ -2940,10 +2984,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "amber",
-    "count": 2
-  },
-  {
     "name": "amigo",
     "count": 2
   },
@@ -2993,10 +3033,6 @@ var dogs = [
   },
   {
     "name": "ashton",
-    "count": 2
-  },
-  {
-    "name": "asia",
     "count": 2
   },
   {
@@ -3228,10 +3264,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "ceasar",
-    "count": 2
-  },
-  {
     "name": "cece",
     "count": 2
   },
@@ -3372,10 +3404,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "d.o.g.",
-    "count": 2
-  },
-  {
     "name": "dahlia",
     "count": 2
   },
@@ -3512,6 +3540,10 @@ var dogs = [
     "count": 2
   },
   {
+    "name": "felix",
+    "count": 2
+  },
+  {
     "name": "fern",
     "count": 2
   },
@@ -3560,6 +3592,10 @@ var dogs = [
     "count": 2
   },
   {
+    "name": "gigi",
+    "count": 2
+  },
+  {
     "name": "gingerbread",
     "count": 2
   },
@@ -3597,6 +3633,10 @@ var dogs = [
   },
   {
     "name": "guiness",
+    "count": 2
+  },
+  {
+    "name": "gunther",
     "count": 2
   },
   {
@@ -3732,14 +3772,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "jojo",
-    "count": 2
-  },
-  {
-    "name": "jojo",
-    "count": 2
-  },
-  {
     "name": "jonah",
     "count": 2
   },
@@ -3817,10 +3849,6 @@ var dogs = [
   },
   {
     "name": "kharma",
-    "count": 2
-  },
-  {
-    "name": "kiki",
     "count": 2
   },
   {
@@ -3937,10 +3965,6 @@ var dogs = [
   },
   {
     "name": "lilli",
-    "count": 2
-  },
-  {
-    "name": "lilu",
     "count": 2
   },
   {
@@ -4108,10 +4132,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "mimi",
-    "count": 2
-  },
-  {
     "name": "mischa",
     "count": 2
   },
@@ -4188,11 +4208,11 @@ var dogs = [
     "count": 2
   },
   {
-    "name": "mr. darcy",
+    "name": "mr darcy",
     "count": 2
   },
   {
-    "name": "mr. pickles",
+    "name": "mr pickles",
     "count": 2
   },
   {
@@ -4229,10 +4249,6 @@ var dogs = [
   },
   {
     "name": "nelson",
-    "count": 2
-  },
-  {
-    "name": "nemo",
     "count": 2
   },
   {
@@ -4284,6 +4300,10 @@ var dogs = [
     "count": 2
   },
   {
+    "name": "obi",
+    "count": 2
+  },
+  {
     "name": "odie",
     "count": 2
   },
@@ -4293,10 +4313,6 @@ var dogs = [
   },
   {
     "name": "orbit",
-    "count": 2
-  },
-  {
-    "name": "osito",
     "count": 2
   },
   {
@@ -4621,14 +4637,6 @@ var dogs = [
   },
   {
     "name": "shama",
-    "count": 2
-  },
-  {
-    "name": "shandy",
-    "count": 2
-  },
-  {
-    "name": "shane",
     "count": 2
   },
   {
@@ -5028,10 +5036,6 @@ var dogs = [
     "count": 2
   },
   {
-    "name": 343,
-    "count": 1
-  },
-  {
     "name": "a son",
     "count": 1
   },
@@ -5065,10 +5069,6 @@ var dogs = [
   },
   {
     "name": "abel",
-    "count": 1
-  },
-  {
-    "name": "abigail",
     "count": 1
   },
   {
@@ -5312,10 +5312,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "amber",
-    "count": 1
-  },
-  {
     "name": "ameha",
     "count": 1
   },
@@ -5380,10 +5376,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "annie",
-    "count": 1
-  },
-  {
     "name": "annie mae",
     "count": 1
   },
@@ -5396,7 +5388,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "annitt2",
+    "name": "annitt",
     "count": 1
   },
   {
@@ -5437,10 +5429,6 @@ var dogs = [
   },
   {
     "name": "appaloosa",
-    "count": 1
-  },
-  {
-    "name": "apple",
     "count": 1
   },
   {
@@ -5501,10 +5489,6 @@ var dogs = [
   },
   {
     "name": "ashburn",
-    "count": 1
-  },
-  {
-    "name": "asia",
     "count": 1
   },
   {
@@ -5760,10 +5744,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "barney",
-    "count": 1
-  },
-  {
     "name": "baron",
     "count": 1
   },
@@ -5773,10 +5753,6 @@ var dogs = [
   },
   {
     "name": "barrington",
-    "count": 1
-  },
-  {
-    "name": "barry",
     "count": 1
   },
   {
@@ -5884,10 +5860,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "bebe",
-    "count": 1
-  },
-  {
     "name": "bebop",
     "count": 1
   },
@@ -5960,10 +5932,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "bella",
-    "count": 1
-  },
-  {
     "name": "bella d'ball",
     "count": 1
   },
@@ -5996,7 +5964,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "bengie jr.",
+    "name": "bengie jr",
     "count": 1
   },
   {
@@ -6632,10 +6600,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "brownie",
-    "count": 1
-  },
-  {
     "name": "bruce lee",
     "count": 1
   },
@@ -6764,18 +6728,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "c.c.",
-    "count": 1
-  },
-  {
-    "name": "c.j",
-    "count": 1
-  },
-  {
-    "name": "c.j.",
-    "count": 1
-  },
-  {
     "name": "cabbage",
     "count": 1
   },
@@ -6809,10 +6761,6 @@ var dogs = [
   },
   {
     "name": "cady",
-    "count": 1
-  },
-  {
-    "name": "caesar",
     "count": 1
   },
   {
@@ -6968,10 +6916,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "casey",
-    "count": 1
-  },
-  {
     "name": "casino",
     "count": 1
   },
@@ -7000,7 +6944,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "ceasar 20",
+    "name": "cc",
     "count": 1
   },
   {
@@ -7065,10 +7009,6 @@ var dogs = [
   },
   {
     "name": "chan",
-    "count": 1
-  },
-  {
-    "name": "chance",
     "count": 1
   },
   {
@@ -7236,10 +7176,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "chico",
-    "count": 1
-  },
-  {
     "name": "chil",
     "count": 1
   },
@@ -7272,15 +7208,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "chip",
-    "count": 1
-  },
-  {
     "name": "chippie",
-    "count": 1
-  },
-  {
-    "name": "chloe",
     "count": 1
   },
   {
@@ -7417,10 +7345,6 @@ var dogs = [
   },
   {
     "name": "cita",
-    "count": 1
-  },
-  {
-    "name": "cj",
     "count": 1
   },
   {
@@ -8108,10 +8032,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "dino",
-    "count": 1
-  },
-  {
     "name": "disney",
     "count": 1
   },
@@ -8173,10 +8093,6 @@ var dogs = [
   },
   {
     "name": "doeboe",
-    "count": 1
-  },
-  {
-    "name": "dog",
     "count": 1
   },
   {
@@ -8728,14 +8644,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "felix",
-    "count": 1
-  },
-  {
-    "name": "felix",
-    "count": 1
-  },
-  {
     "name": "fendi",
     "count": 1
   },
@@ -9184,14 +9092,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "gigi",
-    "count": 1
-  },
-  {
-    "name": "gigi",
-    "count": 1
-  },
-  {
     "name": "gilbert",
     "count": 1
   },
@@ -9420,10 +9320,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "grover",
-    "count": 1
-  },
-  {
     "name": "grrr",
     "count": 1
   },
@@ -9465,14 +9361,6 @@ var dogs = [
   },
   {
     "name": "gunter",
-    "count": 1
-  },
-  {
-    "name": "gunther",
-    "count": 1
-  },
-  {
-    "name": "gunther",
     "count": 1
   },
   {
@@ -9596,7 +9484,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "harry s. truman",
+    "name": "harry s truman",
     "count": 1
   },
   {
@@ -9892,10 +9780,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "hugo",
-    "count": 1
-  },
-  {
     "name": "hugo cabret",
     "count": 1
   },
@@ -9905,10 +9789,6 @@ var dogs = [
   },
   {
     "name": "humphrey",
-    "count": 1
-  },
-  {
-    "name": "hunter",
     "count": 1
   },
   {
@@ -10816,10 +10696,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "kiki",
-    "count": 1
-  },
-  {
     "name": "kiley",
     "count": 1
   },
@@ -10833,10 +10709,6 @@ var dogs = [
   },
   {
     "name": "kimi",
-    "count": 1
-  },
-  {
-    "name": "king",
     "count": 1
   },
   {
@@ -11053,10 +10925,6 @@ var dogs = [
   },
   {
     "name": "l e",
-    "count": 1
-  },
-  {
-    "name": "l.w.",
     "count": 1
   },
   {
@@ -11344,14 +11212,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "lilly",
-    "count": 1
-  },
-  {
-    "name": "lilu",
-    "count": 1
-  },
-  {
     "name": "lily bear",
     "count": 1
   },
@@ -11612,10 +11472,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "lucy",
-    "count": 1
-  },
-  {
     "name": "lucy llamadog",
     "count": 1
   },
@@ -11657,6 +11513,10 @@ var dogs = [
   },
   {
     "name": "luxo",
+    "count": 1
+  },
+  {
+    "name": "lw",
     "count": 1
   },
   {
@@ -12068,23 +11928,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "max",
-    "count": 1
-  },
-  {
-    "name": "max",
-    "count": 1
-  },
-  {
-    "name": "max 52",
-    "count": 1
-  },
-  {
     "name": "max goodwin-pope",
-    "count": 1
-  },
-  {
-    "name": "max0",
     "count": 1
   },
   {
@@ -12640,79 +12484,79 @@ var dogs = [
     "count": 1
   },
   {
+    "name": "mr b",
+    "count": 1
+  },
+  {
+    "name": "mr bagels",
+    "count": 1
+  },
+  {
+    "name": "mr bean",
+    "count": 1
+  },
+  {
+    "name": "mr bear",
+    "count": 1
+  },
+  {
+    "name": "mr big",
+    "count": 1
+  },
+  {
+    "name": "mr bingley",
+    "count": 1
+  },
+  {
+    "name": "mr bogart",
+    "count": 1
+  },
+  {
+    "name": "mr brown",
+    "count": 1
+  },
+  {
+    "name": "mr bubbles",
+    "count": 1
+  },
+  {
+    "name": "mr humphery",
+    "count": 1
+  },
+  {
+    "name": "mr pleasant",
+    "count": 1
+  },
+  {
     "name": "mr sparky",
     "count": 1
   },
   {
-    "name": "mr. b",
+    "name": "mr super",
     "count": 1
   },
   {
-    "name": "mr. bagels",
+    "name": "mr t",
     "count": 1
   },
   {
-    "name": "mr. bean",
+    "name": "mr tibbs",
     "count": 1
   },
   {
-    "name": "mr. bear",
+    "name": "ms nika",
     "count": 1
   },
   {
-    "name": "mr. big",
+    "name": "ms pella",
     "count": 1
   },
   {
-    "name": "mr. bingley",
+    "name": "ms piggy",
     "count": 1
   },
   {
-    "name": "mr. bogart",
-    "count": 1
-  },
-  {
-    "name": "mr. brown",
-    "count": 1
-  },
-  {
-    "name": "mr. bubbles",
-    "count": 1
-  },
-  {
-    "name": "mr. humphery",
-    "count": 1
-  },
-  {
-    "name": "mr. pleasant",
-    "count": 1
-  },
-  {
-    "name": "mr. super",
-    "count": 1
-  },
-  {
-    "name": "mr. t",
-    "count": 1
-  },
-  {
-    "name": "mr. tibbs",
-    "count": 1
-  },
-  {
-    "name": "ms. nika",
-    "count": 1
-  },
-  {
-    "name": "ms. pella",
-    "count": 1
-  },
-  {
-    "name": "ms. piggy",
-    "count": 1
-  },
-  {
-    "name": "ms. wiggles",
+    "name": "ms wiggles",
     "count": 1
   },
   {
@@ -12908,7 +12752,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "neko c. argyris",
+    "name": "neko c argyris",
     "count": 1
   },
   {
@@ -12917,10 +12761,6 @@ var dogs = [
   },
   {
     "name": "nema",
-    "count": 1
-  },
-  {
-    "name": "nemo",
     "count": 1
   },
   {
@@ -13136,14 +12976,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "obi",
-    "count": 1
-  },
-  {
-    "name": "obi",
-    "count": 1
-  },
-  {
     "name": "obie",
     "count": 1
   },
@@ -13284,10 +13116,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "osito",
-    "count": 1
-  },
-  {
     "name": "oslo",
     "count": 1
   },
@@ -13373,10 +13201,6 @@ var dogs = [
   },
   {
     "name": "pancake",
-    "count": 1
-  },
-  {
-    "name": "panda",
     "count": 1
   },
   {
@@ -13800,10 +13624,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "poppy",
-    "count": 1
-  },
-  {
     "name": "poppy seed",
     "count": 1
   },
@@ -13873,10 +13693,6 @@ var dogs = [
   },
   {
     "name": "preciosa",
-    "count": 1
-  },
-  {
-    "name": "precious",
     "count": 1
   },
   {
@@ -14085,10 +13901,6 @@ var dogs = [
   },
   {
     "name": "que",
-    "count": 1
-  },
-  {
-    "name": "queen",
     "count": 1
   },
   {
@@ -14484,10 +14296,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "rocky 25",
-    "count": 1
-  },
-  {
     "name": "rocky j",
     "count": 1
   },
@@ -14592,10 +14400,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "rover",
-    "count": 1
-  },
-  {
     "name": "rowam",
     "count": 1
   },
@@ -14624,10 +14428,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "roxy",
-    "count": 1
-  },
-  {
     "name": "royson",
     "count": 1
   },
@@ -14645,10 +14445,6 @@ var dogs = [
   },
   {
     "name": "rudi",
-    "count": 1
-  },
-  {
-    "name": "rudy",
     "count": 1
   },
   {
@@ -15144,14 +14940,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "shandy",
-    "count": 1
-  },
-  {
-    "name": "shane",
-    "count": 1
-  },
-  {
     "name": "shanghai",
     "count": 1
   },
@@ -15328,15 +15116,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "simba",
-    "count": 1
-  },
-  {
     "name": "simmien",
-    "count": 1
-  },
-  {
-    "name": "simon",
     "count": 1
   },
   {
@@ -15473,10 +15253,6 @@ var dogs = [
   },
   {
     "name": "smith",
-    "count": 1
-  },
-  {
-    "name": "smokey",
     "count": 1
   },
   {
@@ -15828,10 +15604,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "sunny",
-    "count": 1
-  },
-  {
     "name": "sunny davis",
     "count": 1
   },
@@ -15881,10 +15653,6 @@ var dogs = [
   },
   {
     "name": "sweet pea",
-    "count": 1
-  },
-  {
-    "name": "sweetie",
     "count": 1
   },
   {
@@ -16068,10 +15836,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "taz",
-    "count": 1
-  },
-  {
     "name": "taz shade",
     "count": 1
   },
@@ -16120,7 +15884,7 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "teddy p.",
+    "name": "teddy p",
     "count": 1
   },
   {
@@ -16309,10 +16073,6 @@ var dogs = [
   },
   {
     "name": "tiffy",
-    "count": 1
-  },
-  {
-    "name": "tigger",
     "count": 1
   },
   {
@@ -16660,10 +16420,6 @@ var dogs = [
     "count": 1
   },
   {
-    "name": "tutu",
-    "count": 1
-  },
-  {
     "name": "tuut",
     "count": 1
   },
@@ -16709,10 +16465,6 @@ var dogs = [
   },
   {
     "name": "tyrone",
-    "count": 1
-  },
-  {
-    "name": "tyson",
     "count": 1
   },
   {
@@ -16969,10 +16721,6 @@ var dogs = [
   },
   {
     "name": "williams",
-    "count": 1
-  },
-  {
-    "name": "willie",
     "count": 1
   },
   {
@@ -17277,10 +17025,6 @@ var dogs = [
   },
   {
     "name": "zody",
-    "count": 1
-  },
-  {
-    "name": "zoe",
     "count": 1
   },
   {
